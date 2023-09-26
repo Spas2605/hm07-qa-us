@@ -18,7 +18,7 @@ const requestBody = {
 test('Should return 200 status code', async () => {
 	let actualStatusCode;
     try {
-		const response = await fetch(`${config.API_URL}/api/v1/kits/7`, {
+		const response = await fetch(`${config.API_URL}/api/v1/kits/9`, {
 			method: 'PUT',
 			headers: {
 			'Content-Type': 'application/json'
@@ -36,7 +36,7 @@ test('Should return 200 status code', async () => {
 test('Response body should be true', async () => {
 	let actualResponsBody;
     try {
-		const response = await fetch(`${config.API_URL}/api/v1/kits/7`, {
+		const response = await fetch(`${config.API_URL}/api/v1/kits/9`, {
 			method: 'PUT',
 			headers: {
 			'Content-Type': 'application/json'
