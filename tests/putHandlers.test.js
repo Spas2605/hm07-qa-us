@@ -1,5 +1,6 @@
 // eslint-disable-next-line no-undef
 const config = require('../config');
+//Using a PUT request to update a kit
 
 const requestBody = {
 	"productsList": [
@@ -18,7 +19,7 @@ const requestBody = {
 test('Should return 200 status code', async () => {
 	let actualStatusCode;
     try {
-		const response = await fetch(`${config.API_URL}/api/v1/kits/9`, {
+		const response = await fetch(`${config.API_URL}/api/v1/kits/8`, {
 			method: 'PUT',
 			headers: {
 			'Content-Type': 'application/json'
@@ -29,6 +30,7 @@ test('Should return 200 status code', async () => {
 	} catch (error) {
 		console.error(error);
 	}
+	// Checking that the actual status code is 200 
 	expect(actualStatusCode).toBe(200);
 
 });
@@ -36,7 +38,7 @@ test('Should return 200 status code', async () => {
 test('Response body should be true', async () => {
 	let actualResponsBody;
     try {
-		const response = await fetch(`${config.API_URL}/api/v1/kits/9`, {
+		const response = await fetch(`${config.API_URL}/api/v1/kits/8`, {
 			method: 'PUT',
 			headers: {
 			'Content-Type': 'application/json'
@@ -47,6 +49,7 @@ test('Response body should be true', async () => {
 	} catch (error) {
 		console.error(error);
 	}
+	// Checking that the resposne body contains ok: true 
 	expect(actualResponsBody.ok).toBe(true);
 
 });

@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-undef
 const config = require('../config');
-
+//A POST request to create an order
 const requestBody = {
 	"productsList": [
         {
@@ -30,6 +30,7 @@ test('Status code should be 201', async () => {
 	} catch (error) {
 		console.error(error);
 	}
+	// Checking that the actual status code is 200 
 	expect(actualStatusCode).toBe(201);
 });
 
@@ -48,5 +49,6 @@ test('Response Body should contain Order and Go', async () => {
 	} catch (error) {
 		console.error(error);
 	}
+	// Checking that the resposne body contains Order and Go
 	expect(actualResponsBody["courierService"]).toBe('Order and Go');
 });
