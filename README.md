@@ -58,7 +58,7 @@ Save the file!
 in the console enter comand npx jest /getHandlers and press enter.
 
 Testing postHandlers:
-Go to Swagger or API docs to retrieve and end point for the GET method
+Go to Swagger or API docs to retrieve and end point for the POST method
   Go to Postman, choose POST as a method, insert the newly generated URL followed by the end poin api/v1/orders. Click on Send to make sure a 200 Status code is deliverd and the resposne body contains Order and Go
   Open the file postHandlers.test.js
   Fill in the tamplate with this code:
@@ -120,7 +120,7 @@ Save the file!
 in the console enter comand npx jest /postHandlers and press enter.
 
 Testing putHandlers:
-Go to Swagger or API docs to retrieve and end point for the GET method
+Go to Swagger or API docs to retrieve and end point for the PUT method
   Go to Postman, choose PUT as a method, insert the newly generated URL followed by the end poin api/v1/kits/8` Click on Send to make sure a 200 Status code is deliverd and the resposne body contains Order and Go
   Open the file putHandlers.test.js
   Fill in the tamplate with this code:
@@ -184,7 +184,7 @@ in the console enter comand npx jest /putHandlers and press enter.
 
 
 Testing deleteHandlers:
-Go to Swagger or API docs to retrieve and end point for the GET method
+Go to Swagger or API docs to retrieve and end point for the DELETE method
   Go to Postman, choose DELETE as a method, insert the newly generated URL followed by the end poin api/v1/kits. Click on Send to make sure a 200 Status code is deliverd and the resposne body contains OK
   Open the file deleteHandlers.test.js
   Fill in the tamplate with this code:
